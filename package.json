@@ -1,0 +1,30 @@
+{
+    "name": "nirum-syntax-highlighting",
+    "displayName": "Nirum Syntax Highlighting",
+    "description": "Nirum Syntax Highlighting",
+    "version": "0.0.1",
+    "publisher": "Nirum",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nirum",
+            "aliases": ["Nirum", "nirum"],
+            "extensions": [".nrm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nirum",
+            "scopeName": "source.nirum",
+            "path": "./syntaxes/Nirum.tmLanguage"
+        }]
+    },
+    "repository" : {
+        "type" : "git", 
+        "url" : "https://github.com/spoqa/nirum-vscode-syntax-highlighting.git"
+    }
+}
